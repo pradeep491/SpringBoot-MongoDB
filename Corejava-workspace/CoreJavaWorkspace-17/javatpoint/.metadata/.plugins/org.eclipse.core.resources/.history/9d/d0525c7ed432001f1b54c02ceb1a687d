@@ -1,0 +1,18 @@
+package com.test;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class MapEx {
+	public static void main(String[] args) {
+		try {
+			System.out.println("wants to print Hello World after 10 seconds");
+			Thread.sleep(10000);
+			System.out.println("Hello World");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

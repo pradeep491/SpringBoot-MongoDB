@@ -1,0 +1,18 @@
+package com.test;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+
+public class Example2 {
+	public static void main(String[] args) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		LocalDate date = LocalDate.parse("01/19/2024", formatter);
+		System.out.println(date.toString());
+
+		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("d/MM/yyyy",Locale.US);
+		String date1 = "16/08/2016";
+		LocalDate localDate = LocalDate.parse(date1, formatter1);
+		System.out.println(localDate);
+	}
+}

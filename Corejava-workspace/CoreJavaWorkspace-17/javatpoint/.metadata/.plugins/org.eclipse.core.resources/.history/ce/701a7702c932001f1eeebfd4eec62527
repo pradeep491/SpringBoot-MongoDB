@@ -1,0 +1,23 @@
+package com.test;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class Example {
+	public static void main(String[] args) {
+		List<Integer> list = Arrays.asList(3, 5, 2, 3, 3, 5, 2, 2, 3);
+		Map<Integer, Long> counts = list.stream().collect(Collectors.groupingBy(e -> e, Collectors.counting()));
+		
+		System.out.println(counts);
+		
+		Map<Integer, Long> sorted = counts
+		        .entrySet()
+		        .stream()
+		        .sorted()
+		        .collect(
+		            toMap(e -> e.getKey(), e -> e.getValue(), (e1, e2) -> e2,
+		                LinkedHashMap::new));
+	}
+}

@@ -1,0 +1,14 @@
+package com.test;
+
+import java.util.Map;
+
+public class NonRepeatedCharacterFinder {
+public static void main(String[] args) {
+	String str="pradeep";
+	char ch = firstNonRepeatedChar(str);
+	
+}
+public static void firstNonRepeatedChar(String str) {
+	Map<Character,Integer> map = 
+}
+}

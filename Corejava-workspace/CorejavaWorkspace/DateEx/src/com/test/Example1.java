@@ -1,0 +1,31 @@
+package com.test;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Example1 {
+	public static void main(String[] args) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String date = "01/19/2024";
+		LocalDate parsedDate = LocalDate.parse(date, formatter);
+		System.out.println(LocalDate.parse(date, formatter));
+		System.out.println(formatter.format(parsedDate));
+
+		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("dd MMM uuuu");
+
+		LocalDate lt = LocalDate.parse("31 Dec 2018", formatter1);
+
+		System.out.println("LocalDate : " + lt.toString());
+
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		LocalDate date1 = LocalDate.now();
+		LocalDate dateParsed = LocalDate.parse(dateTimeFormatter.format(date1), dateTimeFormatter);
+		System.out.println(dateParsed);
+		
+		 DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+
+		 LocalDateTime dateTime = LocalDateTime.parse(date, formatter2);
+		 System.out.println(dateTime);
+	}
+}

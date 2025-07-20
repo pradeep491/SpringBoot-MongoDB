@@ -1,0 +1,30 @@
+package com.test;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.util.Locale;
+
+public class Example2 {
+	public static void main(String[] args) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		LocalDate date = LocalDate.parse("01/19/2024", formatter);
+		System.out.println(date.toString());
+
+		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("MM/dd/yyyy").withLocale(Locale.US);
+		String date1 = "08/16/2016";
+		LocalDate localDate = LocalDate.parse(date1, formatter1);
+		localDate = (LocalDate)formatter1.parse(localDate.toString());
+		System.out.println();
+		System.out.println(formatter1.format(localDate));
+		
+		try {
+	           DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	           String date2 = "33/10/1983";
+	           LocalDate localDate2 = LocalDate.parse(date2, formatter2);
+	        } catch (DateTimeParseException e) {
+	            log.error("Error parsing the date");
+	        }
+
+	}
+}

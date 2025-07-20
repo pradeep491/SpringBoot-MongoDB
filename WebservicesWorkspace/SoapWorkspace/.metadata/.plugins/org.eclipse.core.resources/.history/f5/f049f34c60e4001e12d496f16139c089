@@ -1,0 +1,22 @@
+package com.kb.ws.client;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import javax.xml.namespace.QName;
+import javax.xml.ws.Service;
+
+public class PrimeNumberManualClient {
+	public static void main(String[] args) throws Exception {
+		URL url = new URL("http://localhost:8888/ws/primeNumber?wsdl");
+
+		QName qname = new QName("http://ws.kb.com/", "PrimeNumberServiceImplService");
+
+		Service service = Service.create(url, qname);
+
+		PrimeNumberService primeNumberService = service.getPort(PrimeNumberService.class);
+
+		System.out.println(primeNumberService.isPrimeNumber(13));
+		System.out.println(primeNumberService.isPrimeNumber(14));
+	}
+
+}

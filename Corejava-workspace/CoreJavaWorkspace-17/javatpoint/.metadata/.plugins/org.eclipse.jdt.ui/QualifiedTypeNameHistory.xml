@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.test.notes.Example1"/>
+    <fullyQualifiedTypeName name="com.test.notes.CopyConstructorEx"/>
+    <fullyQualifiedTypeName name="com.test.notes.AdditionEx"/>
+    <fullyQualifiedTypeName name="com.javatpoint.Calculate"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="com.test.LinkedListEx.Node"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+</qualifiedTypeNameHistroy>

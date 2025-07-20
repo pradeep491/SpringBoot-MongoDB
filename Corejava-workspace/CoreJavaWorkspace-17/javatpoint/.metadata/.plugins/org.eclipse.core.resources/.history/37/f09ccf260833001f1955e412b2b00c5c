@@ -1,0 +1,24 @@
+package com.test;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class MapEx {
+	public static void main(String[] args) {
+		Integer a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 3, 4 };
+
+		List<Integer> list = Arrays.asList(a);
+
+		Map<Integer, Long> map = list.stream().collect(Collectors.groupingBy(e -> e, Collectors.counting()));
+
+		for (Map.Entry m : map.entrySet()) {
+			if ((long) m.getValue() > 1) {
+				System.out.println(m.getKey() + ":" + m.getValue());
+			}
+		}
+		String firstRepeatedNum = map.entrySet().stream().
+
+	}
+}

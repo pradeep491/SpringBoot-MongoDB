@@ -1,0 +1,20 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class Example {
+public static void main(String[] args) {
+	
+	List<Integer> list = Arrays.asList(3,5,2,3,3,5,2,2,3);
+	
+	//1.stream to find out number of occurences;
+	//2.sort based on number of occurences.
+	
+	List<String> list2 = Arrays.asList("pradeep");
+	
+
+	list = list.stream().collect(Collectors.groupingBy(n->n));
+	System.out.println(list);
+}
+}

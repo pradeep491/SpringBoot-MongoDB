@@ -1,0 +1,17 @@
+package com.test;
+
+import java.awt.PageAttributes.MediaType;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+
+@Path("/hello")
+public class HelloWorld {
+
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String helloWorld() {
+		return "Hello Venkata Jasvin";
+	}
+}

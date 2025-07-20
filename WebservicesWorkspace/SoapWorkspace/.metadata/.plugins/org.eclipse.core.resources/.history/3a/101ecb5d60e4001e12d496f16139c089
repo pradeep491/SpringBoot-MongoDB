@@ -1,0 +1,16 @@
+package com.kb.endpoint;
+
+import com.kb.ws.PrimeNumberServiceImpl;
+
+import jakarta.xml.ws.Endpoint;
+
+public class PrimeNumberPublisher {
+	public static void main(String[] args) {
+		Endpoint endpoint = Endpoint.create(new PrimeNumberServiceImpl());
+		endpoint.publish("http://localhost:8888/ws/primeNumber");
+
+		
+		//Endpoint.publish("http://localhost:8888/ws/primeNumber", new PrimeNumberServiceImpl());
+	}
+
+}

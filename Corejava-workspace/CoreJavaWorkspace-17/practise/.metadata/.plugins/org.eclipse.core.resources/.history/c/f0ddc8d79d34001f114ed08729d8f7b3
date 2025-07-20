@@ -1,0 +1,13 @@
+package com.test;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+public class MostRepeatedElementEx {
+	public static void main(String[] args) {
+		List<String> listOfStrings = Arrays.asList("Pen", "Eraser", "Note Book", "Pen", "Pencil", "Pen", "Note Book", "Pencil");
+		Map<String,Long> map = 
+	
+	}
+}

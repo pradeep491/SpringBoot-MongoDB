@@ -1,0 +1,39 @@
+package com.test;
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
+
+public class CountOccurences {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the String:");
+		String str = s.nextLine();
+		s.close();
+		char c1 = 'a';
+		boolean status = false;
+
+		// approach1
+		Set<Character> set = new TreeSet<>();
+		char[] charArray = str.toCharArray();
+		for (char c : charArray) {
+			set.add(c);
+		}
+		if (set.contains(c1)) {
+			status = true;
+		}
+		if (status) {
+			for (char c : set) {
+				long count = str.chars().filter(ch -> ch == c).count();
+				System.out.println(c + ":" + count);
+			}
+			System.out.println("==============================");
+			// approach2
+			str.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(c -> c, Collectors.counting()))
+					.forEach((character, frequency) -> System.out.println(character + ":" + frequency));
+		}else {
+			System.out.println("given character is not there in the String");
+		}
+	}
+}

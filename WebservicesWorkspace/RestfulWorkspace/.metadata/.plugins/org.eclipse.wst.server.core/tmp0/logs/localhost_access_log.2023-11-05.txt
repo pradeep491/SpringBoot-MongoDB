@@ -1,0 +1,17 @@
+127.0.0.1 - - [05/Nov/2023:00:40:11 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:40:14 +0530] "GET /HelloWorldEx1/ HTTP/1.1" 200 52
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:40:14 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:40:46 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 4650
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:40:56 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 4650
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:40:56 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [05/Nov/2023:00:42:03 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:42:04 +0530] "GET /HelloWorldEx1/ HTTP/1.1" 200 52
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:42:13 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 7679
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:42:14 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 7679
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:42:15 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 7679
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:42:15 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 7679
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:42:15 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 7679
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:42:15 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 500 7679
+127.0.0.1 - - [05/Nov/2023:00:46:39 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:46:39 +0530] "GET /HelloWorldEx1/ HTTP/1.1" 404 769
+0:0:0:0:0:0:0:1 - - [05/Nov/2023:00:46:45 +0530] "GET /HelloWorldEx1/rest/customers HTTP/1.1" 200 42

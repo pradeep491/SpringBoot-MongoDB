@@ -1,0 +1,10 @@
+
+m
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ŒÁÇÉþÿÿÿÿ
+h
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(˜ªáö
+E	java:S106"+Replace this use of System.out by a logger.(û·Ð€ÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(˜‹¦¿ýÿÿÿÿ
+V
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(àÝ‚’
+@	java:S106"+Replace this use of System.out by a logger.(àÝ‚’

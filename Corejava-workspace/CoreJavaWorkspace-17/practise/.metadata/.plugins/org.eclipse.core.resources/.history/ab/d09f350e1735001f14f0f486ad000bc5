@@ -1,0 +1,35 @@
+package com.test;
+
+public class SynchronizedHashSetExample {
+	public static void main(String[] args) {
+		// Creating non synchronized HashSet object
+
+		HashSet<String> set = new HashSet<String>();
+
+		// Adding elements to set
+
+		set.add("JAVA");
+
+		set.add("STRUTS");
+
+		set.add("JSP");
+
+		set.add("SERVLETS");
+
+		set.add("JSF");
+
+		// Getting synchronized set
+
+		Set<String> synchronizedSet = Collections.synchronizedSet(set);
+
+		// you must use synchronized block while iterating over synchronizedSet
+
+		synchronized (synchronizedSet) {
+			Iterator<String> it = synchronizedSet.iterator();
+
+			while (it.hasNext()) {
+				System.out.println(it.next());
+			}
+		}
+	}
+}

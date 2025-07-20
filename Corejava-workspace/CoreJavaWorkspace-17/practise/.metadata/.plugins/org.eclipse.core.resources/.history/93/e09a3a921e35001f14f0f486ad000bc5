@@ -1,0 +1,13 @@
+package com.iib;
+
+class A1 {
+	A1() {
+		System.out.println("A1 class constructor");
+	}
+}
+
+public class B {
+	B() {
+		System.out.println("B class Constructor invoked...!");
+	}
+}

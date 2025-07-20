@@ -1,0 +1,7 @@
+package com.test;
+
+public class DuplicateCharsEx {
+public static void main(String[] args) {
+	String str = "java concept of the day".replaceAll("\\s+","").toLowerCase();
+}
+}

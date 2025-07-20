@@ -1,0 +1,13 @@
+package com.test;
+
+
+
+@Path("/hello")
+public class HelloWorld {
+
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String helloWorld() {
+		return "Hello Venkata Jasvin";
+	}
+}

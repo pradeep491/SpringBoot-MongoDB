@@ -1,0 +1,9 @@
+
+¡
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(äË„ÿÿÿÿÿ8ÜŸşğ·2J$cfe9faf9-0b7e-4c6c-a360-cbd57a1277ab
+Œ
+java:S2259I"DA "NullPointerException" could be thrown; "reader" is nullable here.(åÑ§Œûÿÿÿÿ8şí€ñ·2J$86cb13df-50a9-4ec1-9a14-489e1b70cc73
+r	java:S106B"+Replace this use of System.out by a logger.(„‹ü³ùÿÿÿÿ8• şğ·2J$1fb7ae64-cb56-45d8-9004-1b1a9dc7a4bf
+r	java:S106D"+Replace this use of System.out by a logger.(Üà´Òøÿÿÿÿ8• şğ·2J$99452041-6789-414e-bb9c-7fbc771cdeb9
+r
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8Ö¾€ñ·2J$eed2cefa-40a0-424c-bd51-e0e5d615ff53

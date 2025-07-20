@@ -1,0 +1,9 @@
+package com.iib;
+
+public class A {
+	int speed;
+
+	A() {
+		System.out.println("speed is-" + speed);
+	}
+}

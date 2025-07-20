@@ -1,0 +1,8 @@
+
+Œ
+java:S2259A"DA "NullPointerException" could be thrown; "reader" is nullable here.(åÑ§Œûÿÿÿÿ8½ªŒñ·2J$d6b70523-6eff-40fe-b17c-2b60ecfed323
+r	java:S1068"+Replace this use of System.out by a logger.(žÀù…ÿÿÿÿÿ8À»‹ñ·2J$aac63a84-d15e-496c-a4a0-c4d9430f7b0b
+m	java:S106:"+Replace this use of System.out by a logger.(ÌÆ–Ó8Â»‹ñ·2J$37dd0d99-f214-4c9e-80d1-34c5058173ac
+r	java:S106<"+Replace this use of System.out by a logger.(òËÂúøÿÿÿÿ8Ã»‹ñ·2J$75be69c0-740a-4347-9fd4-c63573b09ea1
+r
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8ÉªŒñ·2J$b51e3352-97e0-4e57-bfa5-80c5bc8d7b09
